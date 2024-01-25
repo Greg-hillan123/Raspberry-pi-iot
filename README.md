@@ -19,7 +19,7 @@ sudo i2cdetect -y [bus_no]
 
 This will be useful for addressing our devices in our program
 
-All these libraries apart from the RPI.bme280 were already available on the official Raspberry Pi image
+All the libraries used apart from the RPI.bme280 were already available on the official Raspberry Pi image
 
 
 

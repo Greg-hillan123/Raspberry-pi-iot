@@ -1,20 +1,17 @@
 import smbus2
 import bme280
 import time
-from datetime import datetime
 from rpi_lcd import LCD
 
+#instantiate
 lcd = LCD()
-address1 = 0x27
-address2 = 0x77
 
+#Specify address of sensor
+address = 0x77
+
+#bus address 4 is used for our sensor
 bus = smbus2.SMBus(4)
-calibration_params = bme280.load_calibration_params(bus, address2)
-
-timestamp =[]
-temp = []
-hum = []
-pressure = []
+calibration_params = bme280.load_calibration_params(bus, address)
 
 running = True
 
